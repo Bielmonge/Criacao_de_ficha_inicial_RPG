@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'the-centurion';
+    src: url('assets/fonts/the_centurion/fontWeb/the_centurion-webfont.woff2') format('woff2'),
+         url('assets/fonts/the_centurion/fontWeb/the_centurion-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'augusta';
+    src: url('assets/fonts/augusta/augusta-webfont.woff2') format('woff2'),
+         url('assets/fonts/the_centurion/fontWeb/the_centurion-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: 'augusta';
+}
+header{
+    background-color: black;
+}
+header h1{
+    font-family: 'the-centurion';
+    text-align: center;
+    font-size:50px;
+    color: white;
+}
+main{
+    background-color: white;
+    padding: 5px;
+    font-family: 'augusta';
+}
+.container{
+    display: flex;
+}
+.nomePersonagem{
+    border: none;
+    height: 50px;
+    width: 250px;
+    font-size: xx-large;
+    
+}
+input[type = number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type = number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+.informacoesCorpo{
+    display: flex;
+    font-size: 10px;
+   
+}
+.informacoesCorpo1{
+    
+    font-size: 30px;
+}
+.informacoesCorpo img{
+    padding-top:40px;
+    height: 30px;
+    width: 30px;
+}
+.caixaResultado {
+    border: 2px solid black;
+    background-color: lightgray;
+    padding: 10px;
+    width: 300px;
+    margin-top: 20px;
+}
+input{
+    background-color: rgba(255, 255, 255, 0);
+}
+/* Estilos gerais para o botão de dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropbtn:after {
+    content: '▼'; /* Adiciona a seta para baixo */
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+/* Estilos da lista de opções do dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.dropdown-content label {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-content input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Exibe as opções do dropdown ao clicar no botão */
+.dropdown.show .dropdown-content {
+    display: block;
+}
+
+/* Estilos do botão e dos rótulos ao passar o mouse */
+.dropbtn:hover, .dropdown-content label:hover {
+    background-color: #3e8e41;
+    color: white;
+}
+
+table{
+    
+    border: 2px solid black;
+}

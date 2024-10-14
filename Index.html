@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Criação da ficha</title>
+</head>
+
+<body>
+    <header>
+        <h1>Zaratrustra RPG</h1>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <!--Inserir nome-->
+            <input type="text" id="nome" class="nomePersonagem" placeholder="Nome">
+
+            <!--Inserir altura, peso e calcular o IMC-->
+            <div class="informacoesCorpo">
+                <div class="informacoesCorpo1">
+                    <label>Altura:</label>
+                    <input type="number" id="altura" placeholder="CM">
+                    <br />
+                    <label>Peso:</label>
+                    <input type="number" id="peso" placeholder="KG">
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Area para selecionar raça e classe-->
+        <div class="SeletorRaca-Classe-sub-Classe">
+
+            <div class="dropdown">
+                <button class="dropbtn">Escolher classe</button>
+                <div class="dropdown-content">
+                    <label>
+                        <input type="radio" name="classe" value="guerreiro"> Guerreiro
+                    </label>
+                    <label>
+                        <input type="radio" name="classe" value="mago"> Mago
+                    </label>
+                    <label>
+                        <input type="radio" name="classe" value="arqueiro"> Arqueiro
+                    </label>
+                </div>
+                
+            </div>
+            
+        
+        </div>
+
+        <!--Atributos-->
+        <div class="atributos">
+            <table>
+                <tr>Status</tr>
+                <ul>
+                    <li>Força: <label> </label></li>
+                    <li>Constituição: <label> </label></li>
+                    <li>Agilidade: <label> </label></li>
+                    <li>Inteligencia: <label> </label></li>
+                    <li>Carisma: <label> </label></li>
+                    <li>IMC: <label id="resultadoImc"></label></li>
+                </ul>
+            </table>
+        </div>
+
+
+    </main>
+
+    <footer></footer>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+
+</html>
